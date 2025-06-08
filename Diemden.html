@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Việt Nam Diệu Kỳ</title>
+    <link rel="stylesheet" href="diemden.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script>
+  const currentPath = window.location.pathname.split("/").pop();
+
+  document.querySelectorAll('.nav-link').forEach(link => {
+    const linkPath = link.getAttribute('href');
+    if (linkPath === currentPath || (currentPath === "" && linkPath === "#")) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+</script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header {
+      background: url('https://actgroup.com.vn/wp-content/uploads/2021/09/viet_nam_1.jpg') no-repeat center center/cover;
+      background-size: 100% 300px;
+      height: 300px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .highlight .card {
+      transition: transform 0.3s;
+    }
+    .highlight .card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+    <!-- Header -->
+  <header class="text-center">
+    Việt Nam Diệu Kỳ
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">VNTravel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="Trangchu.html">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="Diemden.html">Điểm đến</a></li>
+          <li class="nav-item"><a class="nav-link" href="Amthuc.html">Ẩm thực</a></li>
+          <li class="nav-item"><a class="nav-link" href="Lehoi.html">Lễ hội</a></li>
+          <li class="nav-item"><a class="nav-link" href="Camnang.html">Cẩm nang</a></li>
+          <li class="nav-item"><a class="nav-link" href="Lienhe.html">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Search Bar -->
+  <div class="container my-4">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Tìm kiếm điểm du lịch…">
+      <button class="btn btn-primary">Tìm</button>
+    </div>
+  </div>
+  <!-- Điểm đến -->
+  <section id="diem-den" class="container my-5">
+    <h2 class="mb-4">Điểm đến nổi bật</h2>
+
+    <h4 id="mien-bac">Miền Bắc</h4>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card diem-den-card h-100">
+          <img src="https://phapluat.tuoitrethudo.vn/stores/news_dataimages/hoangphuongduy/102023/11/23/ha-noi-kham-pha-van-hoa-va-lich-su-tai-van-mieu-quoc-tu-giam_3.jpg?rt=20231011232903" class="card-img-top" alt="Hà Nội">
+          <div class="card-body">
+            <h5 class="card-title">Hà Nội</h5>
+            <p class="card-text">Thủ đô ngàn năm văn hiến với Hồ Gươm, phố cổ, Văn Miếu. Địa chỉ: Quận Hoàn Kiếm. Thời điểm đẹp: Thu - Đông. Ăn ở: Phố cổ, khách sạn trung tâm. Phương tiện: Xe bus, grab.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card diem-den-card h-100">
+          <img src="https://fastt.vn/wp-content/uploads/2022/04/n.jpg" class="card-img-top" alt="Sapa">
+          <div class="card-body">
+            <h5 class="card-title">Sapa</h5>
+            <p class="card-text">Thị trấn mờ sương với đỉnh Fansipan, bản Cát Cát. Địa chỉ: Lào Cai. Thời điểm đẹp: T9-T11. Ăn ở: Nhà nghỉ view núi. Phương tiện: Xe khách, tàu hỏa.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card diem-den-card h-100">
+          <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/10/12/1253579/Vinh-Ha-Long-1.jpg" class="card-img-top" alt="Hạ Long">
+          <div class="card-body">
+            <h5 class="card-title">Hạ Long</h5>
+            <p class="card-text">Kỳ quan thiên nhiên với vịnh và đảo. Địa chỉ: Quảng Ninh. Thời điểm đẹp: Mùa hè. Ăn ở: Hạ Long City. Phương tiện: Xe khách, ô tô riêng.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <div class="card diem-den-card h-100">
+          <img src="https://lamgiau.laodongthudo.vn/stores/news_dataimages/2025/062025/03/09/cam-nang-kinh-nghiem-du-lich-cot-co-lung-cu-ha-giang-20220324230510074520250603092015.jpg" class="card-img-top" alt="Hà Giang">
+          <div class="card-body">
+            <h5 class="card-title">Hà Giang</h5>
+            <p class="card-text">Vùng cao nguyên đá hùng vĩ với đèo Mã Pí Lèng, dinh Vua Mèo, ruộng bậc thang Hoàng Su Phì. Địa chỉ: TP Hà Giang và các huyện Đồng Văn, Mèo Vạc. Thời điểm đẹp: Tháng 9–11 (mùa lúa, tam giác mạch). Ăn ở: Homestay bản địa, nhà nghỉ thị trấn. Phương tiện: Xe máy, ô tô thuê.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4 id="mien-trung" class="mt-5">Miền Trung</h4>
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <div class="card diem-den-card h-100">
+          <img src="https://i2.ex-cdn.com/crystalbay.com/files/content/2025/02/14/kinh-thanh-hue-1-1337.jpg" class="card-img-top" alt="Huế">
+          <div class="card-body">
+            <h5 class="card-title">Huế</h5>
+            <p class="card-text">Kinh đô xưa với lăng tẩm và nhã nhạc cung đình. Địa chỉ: Thừa Thiên Huế. Thời điểm đẹp: T3-T8. Ăn ở: Khách sạn gần sông Hương. Phương tiện: Xe máy, taxi.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card diem-den-card h-100">
+          <img src="https://vcdn1-dulich.vnecdn.net/2025/04/14/BN1-1744276317-5431-1744598185.jpg?w=0&h=0&q=100&dpr=1&fit=crop&s=_ti5M-_n87ZjstZkL2HU8g" class="card-img-top" alt="Đà Nẵng">
+          <div class="card-body">
+            <h5 class="card-title">Đà Nẵng</h5>
+            <p class="card-text">Thành phố đáng sống với bãi biển Mỹ Khê, Bà Nà Hills. Địa chỉ: Trung tâm miền Trung. Thời điểm đẹp: T4-T8. Ăn ở: Khách sạn ven biển. Phương tiện: Taxi, thuê xe máy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card diem-den-card h-100">
+          <img src="https://hoiancreativecity.com/uploads/images/thang%202-2023/hoi-an-gd659f3b8f_1920-1280x853.jpg" class="card-img-top" alt="Hội An">
+          <div class="card-body">
+            <h5 class="card-title">Hội An</h5>
+            <p class="card-text">Phố cổ với đèn lồng, ẩm thực phong phú. Địa chỉ: Quảng Nam. Thời điểm đẹp: T2-T4. Ăn ở: Homestay cổ. Phương tiện: Xe đạp, đi bộ.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4 id="mien-nam" class="mt-5">Miền Nam</h4>
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <div class="card diem-den-card h-100">
+          <img src="https://celineliving.com/static/upload/images/Nha-Tho-Duc-Ba-1(1).jpg" class="card-img-top" alt="TP.HCM">
+          <div class="card-body">
+            <h5 class="card-title">TP.HCM</h5>
+            <p class="card-text">Đô thị năng động với nhiều trung tâm mua sắm, lịch sử phong phú. Địa chỉ: Quận 1, 3, 5... Thời điểm đẹp: Quanh năm. Ăn ở: Trung tâm, quận 1. Phương tiện: Taxi, xe bus, grab.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card diem-den-card h-100">
+          <img src="https://bbt.1cdn.vn/2024/01/05/cho-noi.jpg" class="card-img-top" alt="Cần Thơ">
+          <div class="card-body">
+            <h5 class="card-title">Cần Thơ</h5>
+            <p class="card-text">Đô thị miền Tây với chợ nổi Cái Răng. Địa chỉ: Đồng bằng sông Cửu Long. Thời điểm đẹp: T4-T8. Ăn ở: Nhà vườn. Phương tiện: Thuyền, xe máy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card diem-den-card h-100">
+          <img src="https://vcdn1-dulich.vnecdn.net/2022/04/08/dulichPhuQuoc-1649392573-9234-1649405369.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=SU6n3IvJxW1Sla0xqg31Kg" class="card-img-top" alt="Phú Quốc">
+          <div class="card-body">
+            <h5 class="card-title">Phú Quốc</h5>
+            <p class="card-text">Đảo ngọc với bãi biển trong xanh. Địa chỉ: Kiên Giang. Thời điểm đẹp: T11-T4. Ăn ở: Resort biển. Phương tiện: Máy bay, taxi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p>&copy; 2025 Việt Nam Diệu Kỳ | Facebook | Instagram | Email</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+    const href = link.getAttribute("href");
+    if (href === currentPage || (href === "#" && currentPage === "index.html")) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+</script>
+</body>
+</html>

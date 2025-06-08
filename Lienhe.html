@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Việt Nam Diệu Kỳ</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header {
+      background: url('https://actgroup.com.vn/wp-content/uploads/2021/09/viet_nam_1.jpg') no-repeat center center/cover;
+      background-size: 100% 300px;
+      height: 300px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .highlight .card {
+      transition: transform 0.3s;
+    }
+    .highlight .card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+    <!-- Header -->
+  <header class="text-center">
+    Việt Nam Diệu Kỳ
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">VNTravel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="Trangchu.html">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="Diemden.html">Điểm đến</a></li>
+          <li class="nav-item"><a class="nav-link" href="Amthuc.html">Ẩm thực</a></li>
+          <li class="nav-item"><a class="nav-link" href="Lehoi.html">Lễ hội</a></li>
+          <li class="nav-item"><a class="nav-link" href="Camnang.html">Cẩm nang</a></li>
+          <li class="nav-item"><a class="nav-link" href="Lienhe.html">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6 form-section">
+        <h3 class="mb-4">Gửi Góp Ý</h3>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Họ tên</label>
+            <input type="text" class="form-control" id="name" placeholder="Nhập họ tên của bạn">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Nội dung góp ý</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Viết góp ý của bạn..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Gửi</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h3 class="mb-4">Thông Tin Liên Hệ</h3>
+        <p><i class="bi bi-geo-alt-fill"></i> 153 Ông Ích Đường, Đà Nẵng</p>
+        <p><i class="bi bi-envelope"></i> info@vietnamdieuky.vn</p>
+        <p><i class="bi bi-telephone"></i> 0909 123 456</p>
+        <p><i class="bi bi-facebook"></i> <a href="#">Facebook</a></p>
+        <p><i class="bi bi-instagram"></i> <a href="#">Instagram</a></p>
+        <div class="mt-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.228695627287!2d106.7004238153341!3d10.792395261941188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528dcd1234567%3A0xabcdef!2zVmnDqm4gVMOibiBUaOG7pyAtIFTDom4gVGjGsMahbmcgQ2h1ecOqbg!5e0!3m2!1svi!2s!4v1666666666666" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p>&copy; 2025 Việt Nam Diệu Kỳ | Facebook | Instagram | Email</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+    const href = link.getAttribute("href");
+    if (href === currentPage || (href === "#" && currentPage === "index.html")) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+</script>
+</body>
+</html>
